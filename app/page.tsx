@@ -16,7 +16,7 @@ export default function HomePage() {
         </p>
       </div>
 
-      {/* Web Design Projekte */}
+      {/* Web Design */}
       <div>
         <h2 className="text-2xl font-semibold mb-4">Web Design Projekte</h2>
         <div className="grid md:grid-cols-3 gap-6">
@@ -26,7 +26,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* UI/UX Design Projekte */}
+      {/* UI/UX Design */}
       <div>
         <h2 className="text-2xl font-semibold mb-4">UI/UX Design Projekte</h2>
         <div className="grid md:grid-cols-3 gap-6">
