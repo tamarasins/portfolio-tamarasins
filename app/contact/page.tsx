@@ -6,8 +6,8 @@ export default function ContactPage() {
         Du kannst mich über folgende Wege erreichen:
       </p>
       <ul className="list-disc list-inside text-lg">
-        <li>Email: <a href="kontakt@tamarasins.de" className="text-blue-600 hover:underline">kontakt@tamarasins.de</a></li>
-        <li>LinkedIn: <a href="#" className="text-blue-600 hover:underline">https://www.linkedin.com/in/tamara-sins-62a8a9368</a></li>
+        <li>Email: <a href="mailto:kontakt@tamarasins.de" className="text-blue-600 hover:underline">kontakt@tamarasins.de</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/tamara-sins-62a8a9368" className="text-blue-600 hover:underline">https://www.linkedin.com/in/tamara-sins-62a8a9368</a></li>
       </ul>
     </section>
   );
