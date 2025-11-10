@@ -1,7 +1,35 @@
+"use client";
+
+import Link from "next/link";
+
 export default function Footer() {
   return (
-    <footer className="bg-blue-600 text-white p-4 text-center">
-      © {new Date().getFullYear()} Tamara Sins
+    <footer className="text-center py-10 bg-[#FFD6E0] text-[#3B2E2A] mt-10">
+      <p>© 2025 Tamara Sins — Designed & Built with 💖</p>
+      <div className="flex justify-center gap-4 mt-3 text-sm">
+        <a
+          href="https://github.com/tamarasins"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline"
+        >
+          GitHub
+        </a>
+        <a
+          href="mailto:hello@tamarasins.de"
+          className="hover:underline"
+        >
+          E-Mail
+        </a>
+        <a
+          href="https://www.linkedin.com/in/tamara-sins-62a8a9368"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline"
+        >
+          LinkedIn
+        </a>
+      </div>
     </footer>
   );
 }
