@@ -1,20 +1,14 @@
-import Image from "next/image";
-
-export default function Home() {
+export default function AboutPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-white text-gray-900 p-8">
-      <h1 className="text-4xl font-bold mb-2">Tamara Sins</h1>
-      <h2 className="text-xl mb-6">UX/UI Design & Webkonzeption</h2>
-      <p className="max-w-md text-center">
-        Ich gestalte nutzerzentrierte digitale Erlebnisse – mit Fokus auf
-        Ästhetik, Struktur und Usability. Sieh dir meine Projekte an ↓
+    <section className="container mx-auto p-8">
+      <h1 className="text-3xl font-bold mb-6">Über mich</h1>
+      <p className="mb-4 text-lg">
+        Ich habe als Webentwicklerin gearbeitet und wechsle nun in den Bereich UI/UX Design.
+        Mein Fokus liegt darauf, technische Umsetzung mit ansprechendem Design zu verbinden.
       </p>
-      <a
-        href="/portfolio"
-        className="mt-6 rounded-full bg-black text-white px-6 py-2 hover:bg-gray-800"
-      >
-        Zu den Projekten
-      </a>
-    </main>
+      <p className="mb-4 text-lg">
+        Ich erstelle Websites, Interfaces und Prototypen, die intuitiv, modern und benutzerfreundlich sind.
+      </p>
+    </section>
   );
 }

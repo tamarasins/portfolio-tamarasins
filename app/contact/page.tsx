@@ -1,20 +1,14 @@
-import Image from "next/image";
-
-export default function Home() {
+export default function ContactPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-white text-gray-900 p-8">
-      <h1 className="text-4xl font-bold mb-2">Tamara Sins</h1>
-      <h2 className="text-xl mb-6">UX/UI Design & Webkonzeption</h2>
-      <p className="max-w-md text-center">
-        Ich gestalte nutzerzentrierte digitale Erlebnisse – mit Fokus auf
-        Ästhetik, Struktur und Usability. Sieh dir meine Projekte an ↓
+    <section className="container mx-auto p-8">
+      <h1 className="text-3xl font-bold mb-6">Kontakt</h1>
+      <p className="mb-4 text-lg">
+        Du kannst mich über folgende Wege erreichen:
       </p>
-      <a
-        href="/portfolio"
-        className="mt-6 rounded-full bg-black text-white px-6 py-2 hover:bg-gray-800"
-      >
-        Zu den Projekten
-      </a>
-    </main>
+      <ul className="list-disc list-inside text-lg">
+        <li>Email: <a href="kontakt@tamarasins.de" className="text-blue-600 hover:underline">kontakt@tamarasins.de</a></li>
+        <li>LinkedIn: <a href="#" className="text-blue-600 hover:underline">https://www.linkedin.com/in/tamara-sins-62a8a9368</a></li>
+      </ul>
+    </section>
   );
 }

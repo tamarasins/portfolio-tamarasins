@@ -1,8 +1,9 @@
-'use client'
-import { useParams } from 'next/navigation';
+interface Props {
+  params: { slug: string };
+}
 
-export default function CaseStudyPage() {
-  const { slug } = useParams();
+export default function CaseStudyPage({ params }: Props) {
+  const { slug } = params;
 
   return (
     <section className="container mx-auto p-8">
