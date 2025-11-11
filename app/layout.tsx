@@ -1,26 +1,23 @@
-import "./globals.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-
+import './globals.css'
+import { ReactNode } from 'react'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 export const metadata = {
-  title: "Tamara Sins — Webentwicklung & UI/UX Design",
-  description:
-    "Portfolio von Tamara Sins: Webentwicklung & UX Design",
-};
+  title: 'Tamara Sins',
+  description: 'Cute Portfolio Website',
+}
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="de">
-      <body className="bg-[#FFFDFB] text-[#3B2E2A]">
+    <html lang="de" className="scroll-smooth">
+      <body className="bg-bg dark:bg-gray-900 transition-colors duration-300">
         <Header />
-        <main className="pt-24 min-h-screen">{children}</main>
+        <main className="max-w-6xl mx-auto my-12 p-6 bg-block rounded-block shadow-block">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
-  );
+  )
 }
