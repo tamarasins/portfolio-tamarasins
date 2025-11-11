@@ -1,7 +1,5 @@
 /* globals.css */
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import "tailwindcss";
 
 body {
   background-color: #FDE8C4;
