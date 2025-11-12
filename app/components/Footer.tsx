@@ -6,8 +6,8 @@ export default function Footer() {
         <a href="https://www.linkedin.com/in/tamara-sins-62a8a9368" className="hover:text-highlight transition">LinkedIn</a>
         <a href="mailto:hallo@tamarasins.de" className="hover:text-highlight transition">Email</a>
       </div>
-      <div className="text-gray-600 dark:text-gray-400">
-        &copy; {new Date().getFullYear()} Tamara Sins. Alle Rechte vorbehalten.
+      <div className="text-gray-600">
+        &copy; {new Date().getFullYear()} © Tamara Sins
       </div>
     </footer>
   )

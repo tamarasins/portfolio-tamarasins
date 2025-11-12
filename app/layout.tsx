@@ -1,23 +1,38 @@
 import './globals.css'
 import { ReactNode } from 'react'
+import { Inter, Quicksand } from "next/font/google";
 import Header from './components/Header'
 import Footer from './components/Footer'
+import Doodles from './components/Doodles'
+
+// Fonts laden
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+
+const quicksand = Quicksand({
+  subsets: ["latin"],
+  variable: "--font-quicksand",
+});
 
 export const metadata = {
   title: 'Tamara Sins',
-  description: 'Cute Portfolio Website',
+  description: 'Tamara Sins - Webentwicklerin & UI/UX-Designerin',
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="de" className="scroll-smooth">
-      <body className="bg-bg dark:bg-gray-900 transition-colors duration-300">
+      <body>
         <Header />
-        <main className="max-w-6xl mx-auto my-12 p-6 bg-block rounded-block shadow-block">
+        <main>
           {children}
         </main>
         <Footer />
+        <Doodles />
       </body>
     </html>
   )
 }
+
