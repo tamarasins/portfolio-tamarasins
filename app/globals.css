@@ -13,12 +13,13 @@ h2 {
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 p {
   margin-bottom: 1.5rem;
   line-height: 1.7;
+  font-size: 15px;
 }
 
 /* Buttons */
@@ -51,6 +52,23 @@ p {
 .button-secondary:hover {
   background-color: #ffe9e9;
 }
+
+ul {
+  list-style: none;
+}
+
+li {
+  position: relative;
+  padding-left: 1.4rem;
+}
+
+li::before {
+  content: "♥";
+  position: absolute;
+  left: 0;
+  color: #E56D6A;
+}
+
 
 /* Mobile */
 @media (max-width: 640px) {

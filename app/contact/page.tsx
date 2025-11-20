@@ -1,4 +1,5 @@
 'use client'
+
 import { motion } from 'framer-motion'
 
 export default function ContactPage() {
@@ -7,32 +8,21 @@ export default function ContactPage() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
-      className="py-12 max-w-xl mx-auto"
     >
-      <h2 className="text-4xl font-heading mb-8 text-center">Kontakt</h2>
-      <form className="flex flex-col gap-4">
-        <input
-          type="text"
-          placeholder="Name"
-          className="p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-highlight"
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          className="p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-highlight"
-        />
-        <textarea
-          placeholder="Nachricht"
-          className="p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-highlight"
-        ></textarea>
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="bg-highlight text-white px-6 py-3 rounded-lg font-semibold mt-2"
-        >
-          Senden
-        </motion.button>
-      </form>
-    </motion.section>
+      <h1 className="text-4xl font-heading mb-4 text-[#E56D6A]">Kontakt</h1>
+      <p className="leading-relaxed mb-8">
+        Ich freue mich über neue Projekte, Kooperationen oder einfach nette Gespräche rund um Webentwicklung, UI/UX Design, Games oder anderen Nerdkram.<br />
+        Schreib mir gerne eine Nachricht – ich melde mich so schnell wie möglich zurück!
+      </p>
+
+      <div className="bg-[#FDE8C4]  rounded-xl shadow-md p-6 space-y-2 mx-8 text-center md:text-left md:mx-80">
+        <h2 className="text-xl font-semibold">Direkt erreichbar über:</h2>
+        <strong>E-Mail:</strong> <a href="mailto:hallo@tamarasins.de" className="underline">hallo@tamarasins.de</a>
+        <br />
+        <strong>LinkedIn:</strong> <a href="mailto:hallo@tamarasins.de" className="underline">tamara-sins</a>
+        <br />
+        <strong>GitHub:</strong> <a href="mailto:hallo@tamarasins.de" className="underline">tamarasins</a>
+      </div>
+      </motion.section>
   )
 }
