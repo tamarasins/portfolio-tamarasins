@@ -3,6 +3,13 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 
+type Project = {
+  id: string;
+  title: string;
+  img: string;
+  slug: string;
+};
+
 const businessProjects = [
   { id: 'business-1', title: 'JGA Buddies', img: '/projects/business1.png', slug: 'jga-buddies' },
   { id: 'business-2', title: 'MyWeinwanderung', img: '/projects/business2.png', slug: 'myweinwanderung' },
@@ -19,7 +26,7 @@ const gameProjects = [
 ]
 
 export default function PortfolioPage() {
-  const renderProjects = (projects) => (
+  const renderProjects = (projects: Project[]) => (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       {projects.map((project) => (
         <motion.div
