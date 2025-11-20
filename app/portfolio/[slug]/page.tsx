@@ -87,15 +87,18 @@ export default function PortfolioDetailPage() {
     },
   }
 
-  const content = projectContent[slug] || {
+  const content: Record<string, any> = {
     title: 'Projekt nicht gefunden',
     description: 'Leider gibt es für diesen Slug keinen Inhalt.',
     category: '',
     time: '',
     tasks: [],
     tools: [],
+    problem: [],
+    solution: [],
+    learnings: [],
     imagesCount: 0
-  }
+    }
 
   const images = Array.from({ length: content.imagesCount }, (_, i) => `/images/${slug}-${i+1}.jpg`)
 
