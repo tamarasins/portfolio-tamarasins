@@ -8,37 +8,27 @@ export default function HomePage() {
     <>
       {/* 🌸 Hero Section */}
       <section className="flex flex-col items-center text-center">
-        {/* h1 Animation */}
-        <motion.h1
-          initial={{ opacity: 0, y: 25 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
-        >
-          Hallihallo, ich bin{" "}
-          <span className="text-[#E56D6A]">Tamara Sins</span>
-          <br />
-          Webentwicklerin & UI/UX Designerin
-        </motion.h1>
-
-        {/* Intro Text */}
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3, duration: 0.7 }}
-          className="leading-relaxed"
-        >
-          Ich gestalte digitale Erlebnisse, die Menschen berühren —
-          mit klarer Struktur und Liebe zum Detail.
-          <br />
-          Mein Ziel: Interfaces schaffen, die nicht nur funktionieren,
-          sondern sich richtig gut anfühlen.
-        </motion.p>
+        <motion.div
+    initial={{ opacity: 0, y: -20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.7 }}
+    className="sm:-mt-2"
+  >
+    <img
+      src="/logo-design.png" // dein großes Logo
+      alt="Tamara Sins Logo"
+      width={258}
+      height={246}
+      className="w-[255px] sm:w-[300px] h-auto"
+    />
+  </motion.div>
 
         {/* Button */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
+          className="sm:-mt-2"
         >
           <Link href="/portfolio">
             <button className="button flex items-center gap-2">
@@ -49,7 +39,7 @@ export default function HomePage() {
       </section>
 
       {/* 🧡 Über mich Section */}
-      <section>
+      <section className="sm:-mt-2">
         <div className="mx-auto text-center flex flex-col items-center">
 
           <motion.h2
@@ -67,7 +57,7 @@ export default function HomePage() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.6 }}
-            className="leading-relaxed"
+            className="leading-relaxed text-[15px]"
           >
             Ich komme aus der Webentwicklung und habe meine Leidenschaft für Design entdeckt.
             <br />
@@ -86,7 +76,7 @@ export default function HomePage() {
       </section>
 
       {/* 🧡 Arbeitsweise Section */}
-      <section>
+      <section className="sm:-m-6">
         <div className="mx-auto text-center flex flex-col items-center">
 
           <motion.h2
@@ -104,6 +94,7 @@ export default function HomePage() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.6 }}
+            className="text-[15px] leading-relaxed"
           >
             Für mich ist gutes Design wie ein Gespräch:{" "}
             <span className="text-[#E56D6A]">klar, empathisch und ehrlich</span>.

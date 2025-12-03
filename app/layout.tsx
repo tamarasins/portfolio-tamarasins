@@ -18,7 +18,12 @@ const quicksand = Quicksand({
 
 export const metadata = {
   title: 'Tamara Sins',
-  description: 'Tamara Sins - Webentwicklerin & UI/UX-Designerin',
+  description: 'Tamara Sins - Web Design & Development',
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png'
+  }
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {

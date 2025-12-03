@@ -55,7 +55,7 @@ export default function AboutPage() {
               Tamara Sins
             </h1>
             <p className="text-lg mt-1 text-gray-700">
-              Webentwicklerin • UI/UX Designerin
+              Web Designerin & Entwicklerin
             </p>
           </div>
 
@@ -71,7 +71,7 @@ export default function AboutPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-[#E56D6A]">UI/UX Design</h2>
+            <h2 className="text-2xl font-semibold text-[#E56D6A]">Design</h2>
             <ul className="list-disc list-inside mt-1 space-y-0.5 text-[15px] leading-tight">
               <li>Wireframing & Prototyping</li>
               <li>User Flows & Personas</li>
@@ -95,9 +95,9 @@ export default function AboutPage() {
           <section>
             <h2 className="text-2xl font-semibold text-[#E56D6A]">Tools</h2>
             <ul className="list-disc list-inside mt-1 space-y-0.5 text-[15px] leading-tight">
-              <li>Figma, Adobe XD, Sketch</li>
+              <li>Figma, Adobe XD</li>
               <li>Illustrator, GIMP</li>
-              <li>InVision, Notion</li>
+              <li>Notion</li>
               <li>Jira, Asana</li>
               <li>Git</li>
             </ul>
@@ -108,7 +108,7 @@ export default function AboutPage() {
             <ul className="list-disc list-inside mt-1 space-y-0.5 text-[15px] leading-tight">
               <li><strong>B.Sc. Medieninformatik (2021)</strong> – Schwerpunkt Webentwicklung & Game Development, interaktive Systeme und Mediengestaltung</li>
               <li><strong>Wirtschaftsassistentin (2016)</strong> – BWL, Projektmanagement</li>
-              <li>4 Jahre Webentwicklung – Frontend- & Fullstack-Projekte, moderne Webtechnologien, UI/UX Umsetzung und interaktive Interfaces</li>
+              <li>4 Jahre Webentwicklung – Frontend-Projekte, moderne Webtechnologien, UI/UX Umsetzung und interaktive Interfaces</li>
             </ul>
           </section>
 

@@ -7,7 +7,7 @@ export default function Footer() {
         <a href="mailto:hallo@tamarasins.de" className="hover:text-highlight transition">Email</a>
       </div>
       <div className="text-gray-600 text-xs sm:text-sm">
-        &copy; {new Date().getFullYear()} © Tamara Sins
+        &copy; {new Date().getFullYear()} Tamara Sins
       </div>
     </footer>
   )
